@@ -1,7 +1,7 @@
-import { Routes, Route, Link, useNavigate, useParams } from "react-router-dom";
+import {useNavigate, useParams } from "react-router-dom";
 import { stateContext } from "../Provider/StateProvider";
 import { useEffect, useState, useContext } from 'react';
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import CommentItem from "../components/CommentItem";
 import styled from "styled-components";
 
@@ -32,7 +32,7 @@ font-weight: bold;
 `
 
 const TweetDetailScreen = () => {
-    const [store, dispatch] = useContext(stateContext);
+    const [store, ] = useContext(stateContext);
     let navigate = useNavigate();
     let params = useParams()
     const tweetId = params.id;

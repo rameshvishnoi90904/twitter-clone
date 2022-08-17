@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { Routes, Route, Link, useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { stateContext } from "../Provider/StateProvider";
-import { useEffect, useState, useContext } from 'react';
-import { Container } from "react-bootstrap";
+import { useContext } from 'react';
 import TweetItem from "../components/TweetItem";
 
 const SubNavBar = styled.div`
@@ -12,8 +11,7 @@ font-weight:bold;
 `
 
 const UserScreen = () => {
-    const [store, dispatch] = useContext(stateContext);
-    let navigate = useNavigate();
+    const [store, ] = useContext(stateContext);
     let params = useParams();
     const userTweets = store.tweetList.filter((tItem) => {
         return (tItem.userId == params.id)

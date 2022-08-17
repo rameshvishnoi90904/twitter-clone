@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState, useContext } from 'react';
-import { stateContext } from "../Provider/StateProvider";
 
 const TweetWrapper = styled.div`
     border-bottom: solid 1px #8d8d8d;

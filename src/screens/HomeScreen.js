@@ -1,8 +1,6 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import { stateContext } from "../Provider/StateProvider";
 import TweetItem from "../components/TweetItem";
-import { Container } from "react-bootstrap";
 
 const HomeScreen = () => {
     const [store, dispatch] = useContext(stateContext);
