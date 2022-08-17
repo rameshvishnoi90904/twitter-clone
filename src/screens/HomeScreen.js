@@ -6,7 +6,7 @@ const HomeScreen = () => {
     const [store, dispatch] = useContext(stateContext);
     
     useEffect(() => {
-        if (store.tweetList.length == 0) {
+        if (store.tweetList.length === 0) {
             fetch("https://jsonplaceholder.typicode.com/posts")
             .then(res => res.json())
             .then((result) => {
