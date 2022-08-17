@@ -14,7 +14,7 @@ const UserScreen = () => {
     const [store, ] = useContext(stateContext);
     let params = useParams();
     const userTweets = store.tweetList.filter((tItem) => {
-        return (tItem.userId === params.id)
+        return (tItem.userId == params.id)
     })
     return (
         <>

@@ -41,7 +41,7 @@ const TweetDetailScreen = () => {
     
     useEffect(() => {
         const toShowTweet = store.tweetList.find((tItem) => {
-            return (tItem.id === tweetId)
+            return (tItem.id == (tweetId))
         })
         setTweetData(toShowTweet)
     },[])
