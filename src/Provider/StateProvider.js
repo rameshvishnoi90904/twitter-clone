@@ -24,6 +24,7 @@ const UserDetailsProvider = (props) => {
                     tweetList: data
                 })
                 break;
+            default: 
         }
     }
 
