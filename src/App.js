@@ -14,7 +14,7 @@ height: 100%;
 `
 const NavBar = styled.div`
 height: 50px;
-font-size: 22px;
+font-size: 18px;
 `
 const NavBarItem = styled.div`
 background-color: #096dd9;
